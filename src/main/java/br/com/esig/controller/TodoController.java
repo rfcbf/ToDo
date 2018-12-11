@@ -43,8 +43,6 @@ public class TodoController {
             return "/home";
         }
 
-        AttributedString model = null;
-        model.addAttribute("tarefa", new Todo());
         todoService.salvar(todo);
 
         attr.addFlashAttribute("mensagem", "Tarefa criada com sucesso.");
