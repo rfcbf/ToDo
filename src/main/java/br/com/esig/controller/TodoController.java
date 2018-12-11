@@ -26,20 +26,21 @@ public class TodoController {
     @GetMapping("/listar")
     public ModelAndView listar(ModelMap model){
         model.addAttribute("tarefas", todoService.recuperar());
-        return new ModelAndView("/home", model);
+        return new ModelAndView("/todo/list", model);
     }
 
 
     @GetMapping("/cadastro")
     public String preSalvar(@ModelAttribute("tarefa") Todo todo){
-        return "/home";
-
+        todo.setConcluido("N");
+        return "/todo/cadastro";
     }
 
     @PostMapping("/salvar")
     public String salvar(@Valid @ModelAttribute("tarefa") Todo todo, BindingResult result, RedirectAttributes attr) {
+
         if (result.hasErrors()) {
-            return "/home";
+            return "/todo/cadastro";
         }
 
         todoService.salvar(todo);
