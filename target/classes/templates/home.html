@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>ToDo - Renato Ferraz</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <link href="/webjars/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 align="center">ToDo - Renato Ferraz</h1>
+    </div>
+
+    <hr/>
+
+    <form th:action="@{/tarefas/salvar}" th:method="post" th:object="${tarefa}" >
+
+        <input id="id" type="hidden" th:field="*{tarefa.id}"/>
+        <input id="concluido" type="hidden" th:field="*{concluido}" th:value="N"/>
+
+        <div class="form-group col-md-4">
+            <input class="form-control" id="texto" type="text" th:field="*{texto}" placeholder="Digite a Tarefa"/>
+            <div th:if="${#fields.hasErrors('texto')}" th:errors="*{texto}"></div>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary"
+                    type="submit">Salvar</button>
+        </div>
+
+    </form>
+
+    <div th:if="${mensagem != null}">
+        <div class="alert alert-info" role="alert">
+            <span th:text="${mensagem}">mensagem</span>
+        </div>
+    </div>
+
+
+    <hr/>
+    <footer class="footer">
+        <div align="center">Desenvolvido por: Renato Ferraz</div>
+        <div align="center">(84) 99206-6560</div>
+    </footer>
+
+
+</div>
+</body>
+</html>
