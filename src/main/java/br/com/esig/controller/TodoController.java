@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -25,10 +22,21 @@ public class TodoController {
 
     @GetMapping("/listar")
     public ModelAndView listar(ModelMap model){
-        model.addAttribute("tarefas", todoService.recuperar());
-        return new ModelAndView("/todo/list", model);
+        model.addAttribute("tarefas", todoService.recuperar("T"));
+        return new ModelAndView("/todo/listar", model);
     }
 
+    @GetMapping("/listarconcluidos")
+    public ModelAndView listarconcluidos(ModelMap model){
+        model.addAttribute("tarefas", todoService.recuperar("C"));
+        return new ModelAndView("/todo/listar", model);
+    }
+
+    @GetMapping("/listarnaoconcluidos")
+    public ModelAndView listarnaoconcluidos(ModelMap model){
+        model.addAttribute("tarefas", todoService.recuperar("N"));
+        return new ModelAndView("/todo/listar", model);
+    }
 
     @GetMapping("/cadastro")
     public String preSalvar(@ModelAttribute("tarefa") Todo todo){
@@ -48,5 +56,48 @@ public class TodoController {
         attr.addFlashAttribute("mensagem", "Tarefa criada com sucesso.");
         return "redirect:/tarefas/listar";
     }
+
+    @GetMapping("/{id}/atualizar")
+    public ModelAndView preAtualizar(@PathVariable("id") Integer id, ModelMap model){
+
+        Todo todo = todoService.recuperarPorId(id);
+        model.addAttribute("tarefa", todo);
+        return new ModelAndView("/todo/cadastro", model);
+
+    }
+
+    @PutMapping("/salvar")
+    public String atualizar(@Valid @ModelAttribute("tarefa") Todo todo, BindingResult result, RedirectAttributes attr){
+        if (result.hasErrors()) {
+            return "/todo/cadastro";
+        }
+
+        todoService.atualizar(todo);
+
+        attr.addFlashAttribute("mensagem", "Tarefa atualizada com sucesso.");
+        return "redirect:/tarefas/listar";
+    }
+
+    @GetMapping("{id}/remover")
+    public String remover(@PathVariable("id") Integer id, RedirectAttributes attr){
+        todoService.excluir(id);
+        attr.addFlashAttribute("mensagem", "Tarefa excluída com sucesso.");
+        return "redirect:/tarefas/listar";
+    }
+
+    @GetMapping("{id}/concluir")
+    public String concluir(@PathVariable("id") Integer id, RedirectAttributes attr){
+        todoService.concluir(id);
+        attr.addFlashAttribute("mensagem", "Tarefa concluída.");
+        return "redirect:/tarefas/listar";
+    }
+
+    @GetMapping("{id}/naoconcluir")
+    public String naoConcluir(@PathVariable("id") Integer id, RedirectAttributes attr){
+        todoService.naoConcluir(id);
+        attr.addFlashAttribute("mensagem", "Tarefa não concluída.");
+        return "redirect:/tarefas/listar";
+    }
+
 
 }

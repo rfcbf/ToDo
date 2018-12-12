@@ -1,0 +1,86 @@
+<!DOCTYPE html >
+<html
+        xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>ToDo - Renato</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+    <link href="/webjars/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 align="center">Todo - Renato Ferraz</h1>
+    </div>
+
+    <div class="btn-toolbar justify-content-between" role="toolbar">
+        <a class="btn btn-primary" href="/tarefas/cadastro">Nova Tarefa</a>
+
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <a class="btn btn-outline-secondary" href="/tarefas/listar">Todos</a>
+            <a class="btn btn-outline-secondary" href="/tarefas/listarconcluidos">Concluídos</a>
+            <a class="btn btn-outline-secondary" href="/tarefas/listarnaoconcluidos">Não Concluidos</a>
+        </div>
+    </div>
+
+
+    <hr/>
+
+    <div th:if="${mensagem != null}">
+        <div class="alert alert-info" role="alert">
+            <span th:text="${mensagem}">mensagem</span>
+        </div>
+    </div>
+
+
+    <div th:if="${tarefas != null}">
+        <h4>
+            Lista de Tarefas
+        </h4>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th style="width: 70%;">Tarefa</th>
+                <th>Ação</th>
+            </tr>
+            </thead>
+            <tr th:each="tarefa : ${tarefas}">
+                <td th:text="${tarefa.texto}"></td>
+                <td>
+
+                    <a  th:class="${tarefa.concluido} == 'N' ? 'btn btn-sm btn-success': 'btn btn-sm btn-warning'"
+                        th:text="${tarefa.concluido} == 'N' ? 'Concluir': 'Não Concluir'" style="width: 150px;"
+
+                        th:href="${tarefa.concluido} == 'S' ? @{/tarefas/{id}/naoconcluir(id=${tarefa.id})} : @{/tarefas/{id}/concluir(id=${tarefa.id})} ">
+                    </a>
+                    <a class="btn btn-sm btn-info" th:href="@{/tarefas/{id}/atualizar(id=${tarefa.id})}">Editar</a>
+                    <a class="btn btn-sm btn-danger" th:href="@{/tarefas/{id}/remover(id=${tarefa.id})}">Excluir</a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div th:if="${#lists.isEmpty(tarefas)}">
+        <div class="alert alert-info" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            0 playlists cadastradas!
+        </div>
+    </div>
+    <hr/>
+
+    <!--<a class="btn btn-light" href="/home">Voltar</a>-->
+
+    <footer class="footer">
+        <div align="center">Desenvolvido por: Renato Ferraz</div>
+        <div align="center">(84) 99206-6560</div>
+    </footer>
+</div>
+</body>
+</html>

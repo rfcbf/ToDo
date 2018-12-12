@@ -18,29 +18,23 @@
 
     <hr/>
 
-    <form th:action="@{/tarefas/salvar}" th:method="post" th:object="${tarefa}" >
+    <form th:action="@{/tarefas/salvar}" th:method="${tarefa.id} == 0 ? post : put" th:object="${tarefa}" >
 
         <input id="id" type="hidden" th:field="*{id}"/>
-        <input id="concluido" th:field="*{concluido}" th:value="${concluido}"/>
+        <input id="concluido" type="hidden" th:field="*{concluido}" th:value="${concluido}"/>
 
-        <div class="form-group col-md-4">
-            <input class="form-control" id="texto" type="text" th:field="*{texto}" placeholder="Digite a Tarefa"/>
-            <div th:if="${#fields.hasErrors('texto')}" th:errors="*{texto}"></div>
+
+        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <input maxlength="50" size="50" class="form-control" id="texto" type="text" th:field="*{texto}" placeholder="Digite a Tarefa"/>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+                <a class="btn btn-secondary" href="/tarefas/listar">Cancelar</a>
+            </div>
         </div>
-
-        <div class="form-group">
-            <button class="btn btn-primary"
-                    type="submit">Salvar</button>
-        </div>
-
+        <div th:if="${#fields.hasErrors('texto')}" th:errors="*{texto}"></div>
     </form>
-
-    <div th:if="${mensagem != null}">
-        <div class="alert alert-info" role="alert">
-            <span th:text="${mensagem}">mensagem</span>
-        </div>
-    </div>
-
 
     <hr/>
     <footer class="footer">

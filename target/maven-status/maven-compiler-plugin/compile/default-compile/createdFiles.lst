@@ -1,5 +1,6 @@
 br/com/esig/config/ConfigSpringMvc.class
 br/com/esig/dao/TodoDao.class
+br/com/esig/controller/TodoController.class
 br/com/esig/service/TodoService.class
 br/com/esig/TodoApplication.class
 br/com/esig/dao/TodoDaoImpl.class

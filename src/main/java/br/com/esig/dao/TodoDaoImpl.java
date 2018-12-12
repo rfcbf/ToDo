@@ -20,9 +20,17 @@ public class TodoDaoImpl implements TodoDao {
     }
 
     @Override
-    public List<Todo> recuperar() {
-        return em.createQuery("select p from Todo p", Todo.class).getResultList();
+    public List<Todo> recuperar(String filtro) {
+
+        if (filtro.equals("T")) {
+            return em.createQuery("select p from Todo p", Todo.class).getResultList();
+        }else if (filtro.equals("C")) {
+            return em.createQuery("select p from Todo p where concluido = 'S'", Todo.class).getResultList();
+        }else{
+            return em.createQuery("select p from Todo p where concluido = 'N'", Todo.class).getResultList();
+        }
     }
+
 
     @Override
     public Todo recuperarPorId(Integer id) {
@@ -37,6 +45,24 @@ public class TodoDaoImpl implements TodoDao {
     @Override
     public void excluir(Integer id) {
         em.remove(em.getReference(Todo.class, id));
+    }
+
+
+    @Override
+    public void concluir(Integer id){
+
+        Todo todo = recuperarPorId(id);
+        todo.setConcluido("S");
+        em.merge(todo);
+
+    }
+
+
+    @Override
+    public void naoConcluir(Integer id){
+        Todo todo = recuperarPorId(id);
+        todo.setConcluido("N");
+        em.merge(todo);
     }
 
 }
