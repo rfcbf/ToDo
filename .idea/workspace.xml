@@ -36,7 +36,6 @@
       <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/template.xhtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo2/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -192,11 +191,7 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="138" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -361,7 +356,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544598660017" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544617646055" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -429,7 +424,7 @@
       <workItem from="1544564089892" duration="16660000" />
       <workItem from="1544591763687" duration="517000" />
       <workItem from="1544592419704" duration="134000" />
-      <workItem from="1544596189371" duration="1082000" />
+      <workItem from="1544596189371" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1544534127304</created>
@@ -449,7 +444,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50095000" />
+    <option name="totallyTimeSpent" value="50374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/todo/cadastro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/TodoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -724,12 +712,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/todo/cadastro.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="138" selection-start-line="1" selection-start-column="138" selection-end-line="1" selection-end-column="138" />
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
