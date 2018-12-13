@@ -33,12 +33,19 @@ public class RestTodoController {
         todoService.salvar(todo);
     }
 
-    @PutMapping("/api")
-    public ResponseEntity<Object> atualizar(@RequestBody Todo todo) {
+    @PutMapping("/api/{id}")
+    public void atualizar(@PathVariable Integer id) {
+
+        Todo todo = todoService.recuperarPorId(id);
+
+        if (todo.getConcluido()){
+            todo.setConcluido(false);
+        }else{
+            todo.setConcluido(true);
+        }
 
         todoService.atualizar(todo);
 
-        return ResponseEntity.noContent().build();
     }
 
 }
