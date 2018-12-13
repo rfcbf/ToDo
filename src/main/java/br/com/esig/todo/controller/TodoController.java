@@ -25,7 +25,7 @@ public class TodoController {
     @GetMapping("listar")
     public ModelAndView listar(ModelMap model){
         model.addAttribute("tarefas", todoService.recuperar("T"));
-        return new ModelAndView("/listar", model);
+        return new ModelAndView("listar", model);
     }
 
     @GetMapping("listarconcluidos")
