@@ -17,34 +17,36 @@ import javax.validation.Valid;
 @RequestMapping("tarefas")
 public class TodoController {
 
+
+
     @Autowired
     private TodoService todoService;
 
-    @GetMapping("/listar")
+    @GetMapping("listar")
     public ModelAndView listar(ModelMap model){
         model.addAttribute("tarefas", todoService.recuperar("T"));
         return new ModelAndView("/listar", model);
     }
 
-    @GetMapping("/listarconcluidos")
+    @GetMapping("listarconcluidos")
     public ModelAndView listarconcluidos(ModelMap model){
         model.addAttribute("tarefas", todoService.recuperar("C"));
         return new ModelAndView("/listar", model);
     }
 
-    @GetMapping("/listarnaoconcluidos")
+    @GetMapping("listarnaoconcluidos")
     public ModelAndView listarnaoconcluidos(ModelMap model){
         model.addAttribute("tarefas", todoService.recuperar("N"));
         return new ModelAndView("/listar", model);
     }
 
-    @GetMapping("/cadastro")
+    @GetMapping("cadastro")
     public String preSalvar(@ModelAttribute("tarefa") Todo todo){
         todo.setConcluido(false);
         return "/cadastro";
     }
 
-    @PostMapping("/salvar")
+    @PostMapping("salvar")
     public String salvar(@Valid @ModelAttribute("tarefa") Todo todo, BindingResult result, RedirectAttributes attr) {
 
         if (result.hasErrors()) {
@@ -57,7 +59,7 @@ public class TodoController {
         return "redirect:/tarefas/listar";
     }
 
-    @GetMapping("/{id}/atualizar")
+    @GetMapping("{id}/atualizar")
     public ModelAndView preAtualizar(@PathVariable("id") Integer id, ModelMap model){
 
         Todo todo = todoService.recuperarPorId(id);
@@ -66,7 +68,7 @@ public class TodoController {
 
     }
 
-    @PutMapping("/salvar")
+    @PutMapping("salvar")
     public String atualizar(@Valid @ModelAttribute("tarefa") Todo todo, BindingResult result, RedirectAttributes attr){
         if (result.hasErrors()) {
             return "/cadastro";
