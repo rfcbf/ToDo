@@ -1112,15 +1112,15 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="277" name="concluido">
+    <column id="279" parent="277" name="texto">
       <Position>2</Position>
-      <DataType>varchar(1)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="277" name="texto">
+    <column id="280" parent="277" name="concluido">
       <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
