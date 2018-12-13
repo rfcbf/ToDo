@@ -13,6 +13,10 @@ O modulo Web foi desenvolvindo utilizado o programa ItelliJ Idea
 6) Aguardar o Maven baixar as dependecias;
 7) Executar a aplicação.
 <br>
+<br>
+<b>OBS.</b>Estou usando o banco fornecido pelo Heroku, não sendo necessário configurar nada de banco a não ser o jdbc.
+<br>
+<br>
 <b>Abaixo segue as orientações solicitas.</b>
 <br>
 <br>
@@ -56,6 +60,6 @@ https://todo-renato.herokuapp.com/tarefas/listar
 <br>
 <b>K.</b> Criar aplicativo mobile utilizando Flutter<br>
 Passo concluído.
-
+https://github.com/rfcbf/ToDo-Mobile
 <br>
 <br>
