@@ -1,7 +1,7 @@
 package br.com.esig.todo.entity;
 
 
-import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -14,14 +14,15 @@ public class Todo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @NotBlank
+    //@NotBlank
     @Size(min = 5, max = 50)
     @Column(nullable = false, length = 50)
     private String texto;
 
-    @NotBlank
+    //@NotBlank
+    //@Type(type="true_false")
     @Column(nullable = false, length = 1)
-    private String concluido;
+    private Boolean concluido;
 
     public Integer getId() {
         return id;
@@ -39,12 +40,11 @@ public class Todo {
         this.texto = texto;
     }
 
-    public String getConcluido() {
+    public Boolean getConcluido() {
         return concluido;
     }
 
-    public void setConcluido(String concluido) {
+    public void setConcluido(Boolean concluido) {
         this.concluido = concluido;
     }
-
 }

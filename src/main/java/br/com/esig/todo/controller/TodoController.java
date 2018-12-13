@@ -40,7 +40,7 @@ public class TodoController {
 
     @GetMapping("/cadastro")
     public String preSalvar(@ModelAttribute("tarefa") Todo todo){
-        todo.setConcluido("N");
+        todo.setConcluido(false);
         return "/cadastro";
     }
 

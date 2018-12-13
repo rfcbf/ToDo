@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="heruku">
+<dataSource name="freemysqlhosting">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
     <root id="1">
-      <ServerVersion>5.5.56</ServerVersion>
+      <ServerVersion>5.5.58</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>lower/lower</DefaultCasing>
+      <DefaultCasing>exact</DefaultCasing>
     </root>
-    <schema id="2" parent="1" name="heroku_77d32d425191e20">
-      <Current>1</Current>
-      <Visible>1</Visible>
+    <schema id="2" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="3" parent="1" name="information_schema">
-      <Collation>utf8_general_ci</Collation>
+    <schema id="3" parent="1" name="sql10269840">
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>latin1_swedish_ci</Collation>
     </schema>
     <collation id="4" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -803,7 +803,7 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="201" parent="2" name="todo"/>
+    <table id="201" parent="3" name="todo"/>
     <column id="202" parent="201" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
@@ -811,15 +811,15 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="203" parent="201" name="texto">
+    <column id="203" parent="201" name="concluido">
       <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="204" parent="201" name="concluido">
+    <column id="204" parent="201" name="texto">
       <Position>3</Position>
-      <DataType>tinyint(1)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
