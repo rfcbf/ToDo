@@ -56,7 +56,7 @@ public class TodoController {
         todoService.salvar(todo);
 
         attr.addFlashAttribute("mensagem", "Tarefa criada com sucesso.");
-        return "redirect:tarefas/listar";
+        return "redirect:/tarefas/listar";
     }
 
     @GetMapping("{id}/atualizar")
@@ -77,7 +77,7 @@ public class TodoController {
         todoService.atualizar(todo);
 
         attr.addFlashAttribute("mensagem", "Tarefa atualizada com sucesso.");
-        return "redirect:tarefas/listar";
+        return "redirect:/tarefas/listar";
     }
 
     @GetMapping("{id}/remover")
@@ -91,14 +91,14 @@ public class TodoController {
     public String concluir(@PathVariable("id") Integer id, RedirectAttributes attr){
         todoService.concluir(id);
         attr.addFlashAttribute("mensagem", "Tarefa concluída.");
-        return "redirect:tarefas/listar";
+        return "redirect:/tarefas/listar";
     }
 
     @GetMapping("{id}/naoconcluir")
     public String naoConcluir(@PathVariable("id") Integer id, RedirectAttributes attr){
         todoService.naoConcluir(id);
         attr.addFlashAttribute("mensagem", "Tarefa não concluída.");
-        return "redirect:tarefas/listar";
+        return "redirect:/tarefas/listar";
     }
 
 
