@@ -50,6 +50,12 @@ Optei em utilizar o Bootstrap.
 <b>I.</b> Criar single page app utilizando react<br>
 
 <b>J.</b> Publicar projeto no heroku<br>
-
+Passo concluído.
+https://todo-renato.herokuapp.com/tarefas/listar
+<br>
+<br>
 <b>K.</b> Criar aplicativo mobile utilizando Flutter<br>
+Passo concluído.
 
+<br>
+<br>
