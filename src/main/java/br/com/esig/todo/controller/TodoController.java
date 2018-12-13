@@ -84,7 +84,7 @@ public class TodoController {
     public String remover(@PathVariable("id") Integer id, RedirectAttributes attr){
         todoService.excluir(id);
         attr.addFlashAttribute("mensagem", "Tarefa excluída com sucesso.");
-        return "redirect:tarefas/listar";
+        return "redirect:/tarefas/listar";
     }
 
     @GetMapping("{id}/concluir")

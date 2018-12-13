@@ -34,10 +34,7 @@
       <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/index.xhtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/template.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/esig/todo/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/esig/todo/controller/TodoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo2/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ToDo2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -118,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+            <state relative-caret-position="331">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -461,7 +458,7 @@
     <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544734105528" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544734442301" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -534,7 +531,7 @@
       <workItem from="1544621983547" duration="1225000" />
       <workItem from="1544645126086" duration="272000" />
       <workItem from="1544647736730" duration="261000" />
-      <workItem from="1544669340396" duration="14232000" />
+      <workItem from="1544669340396" duration="14419000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1544534127304</created>
@@ -554,7 +551,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67664000" />
+    <option name="totallyTimeSpent" value="67851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -898,8 +895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+        <state relative-caret-position="331">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
