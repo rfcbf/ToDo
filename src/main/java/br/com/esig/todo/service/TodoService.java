@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface TodoService {
 
-    void salvar(Todo todo);
+    Todo salvar(Todo todo);
     List<Todo> recuperar(String filtro);
     Todo recuperarPorId(Integer id);
     void atualizar(Todo todo);

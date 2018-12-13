@@ -16,8 +16,9 @@ public class TodoServiceImpl implements TodoService {
     private TodoDao todoDao;
 
     @Override
-    public void salvar(Todo todo) {
+    public Todo salvar(Todo todo) {
         todoDao.salvar(todo);
+        return todo;
     }
 
     @Override
