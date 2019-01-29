@@ -24,7 +24,7 @@ public class TodoServiceImpl implements TodoService {
     @Override
     @Transactional(readOnly = true)
     public List<Todo> recuperar(String filtro) {
-        return todoDao.recuperar(filtro) ;
+        return todoDao.recuperar(filtro);
     }
 
     @Override
@@ -44,12 +44,12 @@ public class TodoServiceImpl implements TodoService {
     }
 
     @Override
-    public void concluir(Integer id){
+    public void concluir(Integer id) {
         todoDao.concluir(id);
     }
 
     @Override
-    public void naoConcluir(Integer id){
+    public void naoConcluir(Integer id) {
         todoDao.naoConcluir(id);
     }
 

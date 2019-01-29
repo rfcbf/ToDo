@@ -24,9 +24,9 @@ public class TodoDaoImpl implements TodoDao {
 
         if (filtro.equals("T")) {
             return em.createQuery("select p from Todo p order by texto", Todo.class).getResultList();
-        }else if (filtro.equals("C")) {
+        } else if (filtro.equals("C")) {
             return em.createQuery("select p from Todo p where concluido = true order by texto", Todo.class).getResultList();
-        }else{
+        } else {
             return em.createQuery("select p from Todo p where concluido = false order by texto", Todo.class).getResultList();
         }
     }
@@ -49,7 +49,7 @@ public class TodoDaoImpl implements TodoDao {
 
 
     @Override
-    public void concluir(Integer id){
+    public void concluir(Integer id) {
 
         Todo todo = recuperarPorId(id);
         todo.setConcluido(true);
@@ -59,7 +59,7 @@ public class TodoDaoImpl implements TodoDao {
 
 
     @Override
-    public void naoConcluir(Integer id){
+    public void naoConcluir(Integer id) {
         Todo todo = recuperarPorId(id);
         todo.setConcluido(false);
         em.merge(todo);

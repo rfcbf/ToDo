@@ -5,7 +5,6 @@ import java.util.List;
 import br.com.esig.todo.entity.Todo;
 import br.com.esig.todo.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -38,9 +37,9 @@ public class RestTodoController {
 
         Todo todo = todoService.recuperarPorId(id);
 
-        if (todo.getConcluido()){
+        if (todo.getConcluido()) {
             todo.setConcluido(false);
-        }else{
+        } else {
             todo.setConcluido(true);
         }
 

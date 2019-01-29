@@ -7,7 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="todo")
+@Table(name = "todo")
 public class Todo {
 
     @Id

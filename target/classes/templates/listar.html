@@ -54,10 +54,10 @@
                 <td th:text="${tarefa.texto}"></td>
                 <td>
 
-                    <a  th:class="${tarefa.concluido} == false ? 'btn btn-sm btn-success': 'btn btn-sm btn-warning'"
-                        th:text="${tarefa.concluido} == false ? 'Concluir': 'Não Concluir'" style="width: 150px;"
+                    <a th:class="${tarefa.concluido} == false ? 'btn btn-sm btn-success': 'btn btn-sm btn-warning'"
+                       th:text="${tarefa.concluido} == false ? 'Concluir': 'Não Concluir'" style="width: 150px;"
 
-                        th:href="${tarefa.concluido} == true ? @{/tarefas/{id}/naoconcluir(id=${tarefa.id})} : @{/tarefas/{id}/concluir(id=${tarefa.id})} ">
+                       th:href="${tarefa.concluido} == true ? @{/tarefas/{id}/naoconcluir(id=${tarefa.id})} : @{/tarefas/{id}/concluir(id=${tarefa.id})} ">
                     </a>
                     <a class="btn btn-sm btn-info" th:href="@{/tarefas/{id}/atualizar(id=${tarefa.id})}">Editar</a>
                     <a class="btn btn-sm btn-danger" th:href="@{/tarefas/{id}/remover(id=${tarefa.id})}">Excluir</a>

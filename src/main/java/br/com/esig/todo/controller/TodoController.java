@@ -18,30 +18,29 @@ import javax.validation.Valid;
 public class TodoController {
 
 
-
     @Autowired
     private TodoService todoService;
 
     @GetMapping("listar")
-    public ModelAndView listar(ModelMap model){
+    public ModelAndView listar(ModelMap model) {
         model.addAttribute("tarefas", todoService.recuperar("T"));
         return new ModelAndView("listar", model);
     }
 
     @GetMapping("listarconcluidos")
-    public ModelAndView listarconcluidos(ModelMap model){
+    public ModelAndView listarconcluidos(ModelMap model) {
         model.addAttribute("tarefas", todoService.recuperar("C"));
         return new ModelAndView("listar", model);
     }
 
     @GetMapping("listarnaoconcluidos")
-    public ModelAndView listarnaoconcluidos(ModelMap model){
+    public ModelAndView listarnaoconcluidos(ModelMap model) {
         model.addAttribute("tarefas", todoService.recuperar("N"));
         return new ModelAndView("listar", model);
     }
 
     @GetMapping("cadastro")
-    public String preSalvar(@ModelAttribute("tarefa") Todo todo){
+    public String preSalvar(@ModelAttribute("tarefa") Todo todo) {
         todo.setConcluido(false);
         return "cadastro";
     }
@@ -60,7 +59,7 @@ public class TodoController {
     }
 
     @GetMapping("{id}/atualizar")
-    public ModelAndView preAtualizar(@PathVariable("id") Integer id, ModelMap model){
+    public ModelAndView preAtualizar(@PathVariable("id") Integer id, ModelMap model) {
 
         Todo todo = todoService.recuperarPorId(id);
         model.addAttribute("tarefa", todo);
@@ -69,7 +68,7 @@ public class TodoController {
     }
 
     @PutMapping("salvar")
-    public String atualizar(@Valid @ModelAttribute("tarefa") Todo todo, BindingResult result, RedirectAttributes attr){
+    public String atualizar(@Valid @ModelAttribute("tarefa") Todo todo, BindingResult result, RedirectAttributes attr) {
         if (result.hasErrors()) {
             return "cadastro";
         }
@@ -81,21 +80,21 @@ public class TodoController {
     }
 
     @GetMapping("{id}/remover")
-    public String remover(@PathVariable("id") Integer id, RedirectAttributes attr){
+    public String remover(@PathVariable("id") Integer id, RedirectAttributes attr) {
         todoService.excluir(id);
         attr.addFlashAttribute("mensagem", "Tarefa excluída com sucesso.");
         return "redirect:/tarefas/listar";
     }
 
     @GetMapping("{id}/concluir")
-    public String concluir(@PathVariable("id") Integer id, RedirectAttributes attr){
+    public String concluir(@PathVariable("id") Integer id, RedirectAttributes attr) {
         todoService.concluir(id);
         attr.addFlashAttribute("mensagem", "Tarefa concluída.");
         return "redirect:/tarefas/listar";
     }
 
     @GetMapping("{id}/naoconcluir")
-    public String naoConcluir(@PathVariable("id") Integer id, RedirectAttributes attr){
+    public String naoConcluir(@PathVariable("id") Integer id, RedirectAttributes attr) {
         todoService.naoConcluir(id);
         attr.addFlashAttribute("mensagem", "Tarefa não concluída.");
         return "redirect:/tarefas/listar";
