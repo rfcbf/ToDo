@@ -2,141 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac863f5c-a438-4ac4-be30-1ad5e7bc87d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/controller/PerguntaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/controller/RespostaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/dao/PerguntasDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/dao/PerguntasDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/dao/RespostaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/dao/RespostaDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/dao/UsuarioDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/dao/UsuarioDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/persistence/model/Global.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/service/PerguntasService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/service/PerguntasServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/service/RespostasService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/service/RespostasServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/service/UsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/java/br/com/esig/perguntasrespostas/service/UsuarioServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/resources/static/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/resources/static/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/resources/static/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/resources/static/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/resources/static/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/webapp/WEB-INF/jsp/editarPerfil.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/webapp/WEB-INF/jsp/novaPergunta.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PerguntasRespostas/src/main/webapp/WEB-INF/jsp/novoLogin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ToDo_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.9.1.20180912-1601.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.9.1.20180912-1601.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/nbactions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/src/main/java/br/com/esig/todo/ToDo/ToDoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-1/src/test/java/br/com/esig/todo/ToDo/ToDoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/faces-config.NavData" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/lib/unknown/binary/hibernate-jpamodelgen-4.3.1.Final/SNAPSHOT/hibernate-jpamodelgen-4.3.1.Final-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/nb-configuration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/java/br/com/esig/todo/Bean/TodoBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/java/br/com/esig/todo/entidy/Todo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo-RenatoFerraz/src/main/webapp/template.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_Release.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_Release.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_Release1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_Release1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_Release2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_Release2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PerguntasRespostas" beforeDir="false" afterPath="$PROJECT_DIR$/../PerguntasRespostas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/TodoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/TodoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/config/ConfigSpringMvc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/config/ConfigSpringMvc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/RestTodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/RestTodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/dao/TodoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/dao/TodoDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/entity/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/entity/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/service/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/esig/todo/service/TodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/listar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/esig/todo/TodoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/esig/todo/TodoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ToDo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/esig/todo/config/ConfigSpringMvc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/esig/todo/config/ConfigSpringMvc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/esig/todo/controller/RestTodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/esig/todo/controller/RestTodoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/esig/todo/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/esig/todo/controller/TodoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/listar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/main/java/br/com/esig/todo/ToDoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/main/java/br/com/esig/todo/TodoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/main/java/br/com/esig/todo/entity/Todo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/main/java/br/com/esig/todo/util/HibernateUtilConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ToDo2/src/test/java/br/com/esig/todo/ToDoApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/classes/.netbeans_automatic_build" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/classes/.netbeans_update_resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/classes/br/com/esig/todos/Bean/TodosBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/classes/br/com/esig/todos/Entidy/Todos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/classes/br/com/esig/todos/Entidy/daoTodos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/glassfish-web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/lib/javax.faces.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/lib/primefaces-6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/gfv3ee6.dpf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/build/web/template.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/lib/primefaces-6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/ant-deploy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/build-impl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/genfiles.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/private/private.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/private/private.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/src/conf/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/src/java/br/com/esig/todos/Bean/TodosBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/src/java/br/com/esig/todos/Entidy/Todos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/web/index.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todos1-renatoferraz/web/template.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ToDo_bkp - cópia" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDo_bkp - cópia" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -176,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
+            <state relative-caret-position="900">
               <caret line="60" selection-start-line="60" selection-end-line="67" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -185,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cadastro.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -194,10 +62,26 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/RestTodoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
+            <state relative-caret-position="945">
               <caret line="63" selection-start-line="62" selection-end-line="63" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -210,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/dao/TodoDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="75">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -316,10 +200,10 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1125" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="1415" />
+    <option name="width" value="505" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -526,6 +410,7 @@
       <workItem from="1548430104850" duration="3269000" />
       <workItem from="1548450079692" duration="411000" />
       <workItem from="1548510646983" duration="34711000" />
+      <workItem from="1548891202148" duration="3069000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1544534127304</created>
@@ -545,7 +430,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109277000" />
+    <option name="totallyTimeSpent" value="112346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -557,7 +442,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="1415" y="0" width="505" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -566,7 +451,7 @@
       <window_info id="Favorites" order="3" sideWeight="0.15840708" side_tool="true" weight="0.16134185" />
       <window_info id="Web" order="4" show_stripe_button="false" sideWeight="0.15840708" side_tool="true" weight="0.16134185" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.7115044" visible="true" weight="0.19755058" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.7115044" weight="0.3618421" />
       <window_info id="Structure" order="7" sideWeight="0.28849557" side_tool="true" weight="0.19755058" />
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32920355" />
@@ -676,13 +561,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://00e7e475-a418-43a4-b300-444761df9ca1/schema/sql10269840/table/todo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://00e7e475-a418-43a4-b300-444761df9ca1/schema/sql10269840/table/todo" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/00e7e475-a418-43a4-b300-444761df9ca1/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -708,27 +587,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://51629276-d2a5-4dcc-b985-d07fa0fb0631/schema/heroku_77d32d425191e20/table/todo.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://99179b78-d92d-4ee3-9132-05f71374cb63/schema/todo/table/todo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://51629276-d2a5-4dcc-b985-d07fa0fb0631/schema/heroku_77d32d425191e20/table/todo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://51629276-d2a5-4dcc-b985-d07fa0fb0631/schema/heroku_77d32d425191e20/table/todo.sql" />
+    <entry file="das://99179b78-d92d-4ee3-9132-05f71374cb63/schema/todo/table/todo" />
+    <entry file="das://51629276-d2a5-4dcc-b985-d07fa0fb0631/schema/heroku_77d32d425191e20/table/todo" />
     <entry file="file://$PROJECT_DIR$/src/test/java/br/com/esig/todo/TodoApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -825,16 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/RestTodoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/service/TodoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -851,7 +702,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/listar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
+        <state relative-caret-position="945">
           <caret line="63" selection-start-line="62" selection-end-line="63" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -862,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/dao/TodoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="75">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -878,9 +729,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cadastro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="82" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
+        <state relative-caret-position="900">
           <caret line="60" selection-start-line="60" selection-end-line="67" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -888,10 +746,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cadastro.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/esig/todo/controller/RestTodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="82" />
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
